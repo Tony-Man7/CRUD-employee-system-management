@@ -56,7 +56,6 @@ const currentRoute = ref(route().current());
                         Departments
                         </Link>
                     </li>
-<<<<<<< HEAD
                     <li>
                         <Link :href="route('kanban-board')"
                             :class="{
@@ -67,8 +66,6 @@ const currentRoute = ref(route().current());
                         Kanban Board
                         </Link>
                     </li>
-=======
->>>>>>> bf6d9dd0450b9804df6ab0da319b464c95b19409
                 </ul>
             </nav>
         </aside>

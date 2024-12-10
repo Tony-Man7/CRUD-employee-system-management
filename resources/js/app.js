@@ -7,11 +7,8 @@ import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { ZiggyVue } from '../../vendor/tightenco/ziggy';
 import { toast } from 'vue3-toastify';
 import 'vue3-toastify/dist/index.css';
-<<<<<<< HEAD
 import 'boxicons/css/boxicons.min.css';
 
-=======
->>>>>>> bf6d9dd0450b9804df6ab0da319b464c95b19409
 
 createInertiaApp({
     title: (title) => `${title} - System Management`,

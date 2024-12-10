@@ -5,11 +5,8 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\ServiceRecordController;
 use App\Http\Controllers\DepartmentController;
-<<<<<<< HEAD
 use App\Http\Controllers\KanbanController;
 
-=======
->>>>>>> bf6d9dd0450b9804df6ab0da319b464c95b19409
 use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth')->group(function () {
@@ -40,14 +37,11 @@ Route::middleware('auth')->group(function () {
     Route::get('/departments/{id}/edit', [DepartmentController::class, 'edit'])->name('departments.edit');
     Route::put('/departments/{id}', [DepartmentController::class, 'update'])->name('departments.update');
     Route::delete('/departments/{id}', [DepartmentController::class, 'destroy'])->name('departments.destroy');
-<<<<<<< HEAD
 
     // Kanban Board Routes
     Route::get('/kanban-board', [KanbanController::class, 'index'])->name('kanban-board');
 
 
-=======
->>>>>>> bf6d9dd0450b9804df6ab0da319b464c95b19409
 });
 
 Route::middleware('guest')->group(function () {
