@@ -12,7 +12,11 @@ class EmployeeController extends Controller
     public function index()
     {
         $employees = Employee::with('department')->get();
+<<<<<<< HEAD
         $departments = Department::all(); 
+=======
+        $departments = Department::all(); // Retrieve all departments
+>>>>>>> bf6d9dd0450b9804df6ab0da319b464c95b19409
 
         return Inertia::render('Employees', [
             'employees' => $employees,

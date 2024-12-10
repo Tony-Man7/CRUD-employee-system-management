@@ -19,8 +19,12 @@
         "vue": "^3.3.13"
     },
     "dependencies": {
+<<<<<<< HEAD
         "boxicons": "^2.1.4",
         "vue3-toastify": "^0.2.3",
         "vuedraggable": "^4.1.0"
+=======
+        "vue3-toastify": "^0.2.3"
+>>>>>>> bf6d9dd0450b9804df6ab0da319b464c95b19409
     }
 }

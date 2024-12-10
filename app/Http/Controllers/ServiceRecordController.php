@@ -13,7 +13,11 @@ class ServiceRecordController extends Controller
 {
       // List all service records
       public function index()
+<<<<<<< HEAD
     {
+=======
+      {
+>>>>>>> bf6d9dd0450b9804df6ab0da319b464c95b19409
           // Retrieve all service records with related employee and department data
           $serviceRecords = ServiceRecord::with(['employee', 'department'])->get();
   

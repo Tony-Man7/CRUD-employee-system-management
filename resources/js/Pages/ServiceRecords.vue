@@ -86,6 +86,7 @@ const deleteRecord = (id) => {
       <div v-if="showForm" class="mb-6">
         <form @submit.prevent="submitForm" class="space-y-4">
           <div>
+<<<<<<< HEAD
           <label for="employee_id" class="block text-sm font-medium text-gray-700">Employee</label>
           <select id="employee_id" v-model="form.employee_id" required
             class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
@@ -99,11 +100,26 @@ const deleteRecord = (id) => {
         </div>
 
 
+=======
+            <label for="employee_id" class="block text-sm font-medium text-gray-700">Employee</label>
+            <select id="employee_id" v-model="form.employee_id" required
+              class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+              <option value="">Select Employee</option>
+              <option v-for="employee in employees" :key="employee.id" :value="employee.id">
+                {{ employee.name }}
+              </option>
+            </select>
+          </div>
+>>>>>>> bf6d9dd0450b9804df6ab0da319b464c95b19409
 
           <div>
             <label for="department_id" class="block text-sm font-medium text-gray-700">Department</label>
             <select id="department_id" v-model="form.department_id" required
               class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+<<<<<<< HEAD
+=======
+              <option value="">Select Department</option>
+>>>>>>> bf6d9dd0450b9804df6ab0da319b464c95b19409
               <option v-for="department in departments" :key="department.id" :value="department.id">
                 {{ department.name }}
               </option>

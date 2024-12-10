@@ -20,6 +20,7 @@ const form = useForm({
   department_id: null
 });
 
+<<<<<<< HEAD
 const editEmployee = (employee) => {
   form.name = employee.name;
   form.email = employee.email;
@@ -29,6 +30,8 @@ const editEmployee = (employee) => {
   showForm.value = true; 
 };
 
+=======
+>>>>>>> bf6d9dd0450b9804df6ab0da319b464c95b19409
 const submitForm = () => {
   if (currentEmployee.value) {
     form.put(route('employees.update', currentEmployee.value.id), form.value, {
@@ -54,6 +57,18 @@ const submitForm = () => {
   }
 };
 
+<<<<<<< HEAD
+=======
+const editEmployee = (employee) => {
+  form.name = employee.name;
+  form.email = employee.email;
+  form.phone_number = employee.phone_number;
+  form.department_id = employee.department_id;
+  currentEmployee.value = employee; 
+  showForm.value = true; 
+};
+
+>>>>>>> bf6d9dd0450b9804df6ab0da319b464c95b19409
 const deleteEmployee = (id) => {
   if (confirm('Are you sure you want to delete this employee?')) {
     form.delete(route('employees.destroy', id), {
